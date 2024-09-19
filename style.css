@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600:#dc0000;
+    --body:#f9f6ff;
+}
+*{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Roboto",sans-serif ;
+    font-weight: 300;
+    line-height: 1.5em;
+
+}
+nav .container{
+    max-width: 1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow:5px 5px 5px black ;    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap:30px;
+    
+}
+#logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+.container ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+.hero-section{
+    background-image: url(hero_image.png);
+    height: 100vh;
+    display: grid;
+
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-section h1{
+    font-size: 95px;
+}
+.hero-section h3{
+    font-size: 36px;
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.music-section .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.music-section{
+    background-color: var(--purple500);
+    padding: 20px;
+    color: white;
+}
+.i-pad-i-phone-img{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+.primary-btn{
+    background-color: var(--red600);
+    color: white;
+}
+.secondary-btn{
+    background-color: var(--purple500);
+    color: white;
+}
+.about-music {
+   max-width: 1200px;
+   margin:0 auto ;
+   padding-top: 500px;
+   display: grid;
+   place-items: center;
+   gap: 50px;
+   text-align: center;
+   margin-bottom: 50px;
+}
+.video-section{
+    background-image: url(video.png);
+    min-height: 800px;
+    display: grid;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+.hero-section,.video-section{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-gift{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 50px;
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.gift-content button{
+    background-color: var(--purple500);
+    color: white;
+}
