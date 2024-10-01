@@ -10,5 +10,6 @@ public class prg1 {
                  return;
              }
          }
+         System.out.println("It is palindrom");
 }
 }
